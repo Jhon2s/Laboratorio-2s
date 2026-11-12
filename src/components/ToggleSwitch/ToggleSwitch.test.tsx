@@ -16,7 +16,7 @@ describe('ToggleSwitch Component', () => {
     expect(switchElement).toBeChecked();
   });
 
-   it('debe ejecutar la función onChange al hacer clic', () => {
+  it('debe ejecutar la función onChange al hacer clic', () => {
     const handleChange = vi.fn();
     render(<ToggleSwitch label="Prueba" onChange={handleChange} />);
     fireEvent.click(screen.getByLabelText(/prueba/i));
